@@ -3,7 +3,7 @@
 	"version": "5.0.0",
 	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
 	"main": "index.js",
-	"author": "WebDesign Master",
+	"author": "solexofficial",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.13.1",
