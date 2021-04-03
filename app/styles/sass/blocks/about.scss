@@ -1,4 +1,56 @@
+.wave {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about-benefits {
+  position: relative;
+  max-width: 1200px;
+  background-color: $dark;
+  box-shadow: 0 0 15px 5px rgba(#000, 0.5);
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 120%;
+}
+
+.benefits-item {
+  width: 33.333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.benefits-item__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.benefits-item__header {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.benefits-item__text {
+  min-height: 100px;
+  padding: 0 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
 .about-company {
+  margin-top: 70px;
   display: flex;
   line-height: 120%;
 }
@@ -6,8 +58,12 @@
 .about-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 50%;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 70%;
+}
+.about-col--animate {
+  width: 30%;
 }
 
 .about__inner {
@@ -16,13 +72,48 @@
 }
 
 .about__titleCompany {
+  line-height: 100%;
   color: #fff;
   font-style: italic;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 900;
 }
+
+.about__text {
+  width: 95%;
+  margin-top: 15px;
+  line-height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  & span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
 .about-animate {
   position: relative;
   z-index: 2;
-  margin: 0 auto;
+  margin-left: auto;
+}
+
+.about-quote {
+  position: relative;
+  font-style: italic;
+  padding-left: 20px;
+  font-size: 14px;
+  width: 400px;
+  color: #fff;
+  &:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $accent;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    z-index: 1;
+  }
 }

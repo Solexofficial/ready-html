@@ -10,6 +10,12 @@
   border-radius: $btn-radius;
 }
 
+.modal__container--catalog {
+  width: 1200px;
+  max-width: 100%;
+  background-color: lighten($dark, 6);
+}
+
 .modal__title {
   color: #fff;
   font-family: oswald-vh, sans-serif;
@@ -35,10 +41,63 @@
   width: 100%;
 }
 
+.modal__title--catalog {
+  font-size: 30px;
+  color: $accent;
+}
+
+.modal-content {
+  margin: 20px 0;
+  font-family: roboto-vh, sans-serif;
+  color: #fff;
+}
+
+.modal-content__info {
+  line-height: 120%;
+  display: flex;
+  justify-content: space-between;
+}
+.info-text {
+  width: 70%;
+}
+
+.info-text__title {
+  font-size: 20px;
+}
+.info-text__list {
+  margin: 20px 0;
+  max-width: 50%;
+  & li {
+    display: flex;
+  }
+  & li > span {
+    margin-left: auto;
+  }
+}
+
+.info-img {
+  padding: 0 15px;
+  & img {
+    border-radius: 15px;
+  }
+}
+
+.modal-content__table {
+  display: table;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  & td,
+  th {
+    padding: 0 10px;
+    border: 1px solid #fff;
+  }
+}
+
 .modal__footer {
   text-align: center;
 }
 
 .modal__input {
+  font-family: roboto-vh, sans-serif;
   margin-bottom: 8px;
 }
