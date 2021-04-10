@@ -31,11 +31,11 @@ $gutter: $grid-gutter-width
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl)
-	@font-face
-		font-family: $fname
-		font-style: $fstyle
-		font-weight: $fweight
-		src: url($furl) format('woff2')
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: url($furl) format('woff2')
 
 @include font('oswald-vh', normal, 700, '../fonts/oswaldbold-webfont.woff2')
 @include font('oswald-vh', normal, 500, '../fonts/oswaldmedium-webfont.woff2')
@@ -47,40 +47,45 @@ $gutter: $grid-gutter-width
 
 // GENERAL DOCUMENT STYLES
 body
-	background-color: $deep
+  background-color: $deep
 
 ::placeholder
-	color: #666
+  color: #666
 
 ::selection
-	background-color: $accent
-	color: #fff
+  background-color: $accent
+  color: #fff
 
 input, textarea
-	outline: none
-	&:focus:required:invalid
-		border-color: red
-	&:required:valid
-		border-color: green
+  outline: none
+  &:focus:required:invalid
+    border-color: red
+  &:required:valid
+    border-color: green
 
 body
-	font-family: $userfont
-	font-size: $fontsize
-	line-height: $lineheight
-	color: $textcolor
-	min-width: 320px
-	position: relative
-	overflow-x: hidden
+  font-family: $userfont
+  font-size: $fontsize
+  line-height: $lineheight
+  color: $textcolor
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
 
 ul,ol
-	margin: 0
-	padding: 0
+  margin: 0
+  padding: 0
 li
-	list-style: none
+  list-style: none
 
 a
-	color: #fff
-	&:hover,
-	&:focus
-		color: #fff
-		text-decoration: none
+  color: #fff
+  &:hover,
+  &:focus
+    color: #fff
+    text-decoration: none
+
+.img
+  display: block
+  width: 100%
+  max-width: 100%

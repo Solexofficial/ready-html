@@ -57,6 +57,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.info-menu {
+  display: flex;
+  border: 2px solid #fff;
+}
+
+.info-content {
+  display: none;
+  padding-left: 5px;
+  margin-top: 10px;
+
+  &.active {
+    display: block;
+  }
+}
+
 .info-text {
   width: 70%;
 }
@@ -76,19 +92,40 @@
 }
 
 .info-img {
+  width: 30%;
   padding: 0 15px;
+  text-align: center;
+  color: $accent;
   & img {
+    max-height: 340px;
     border-radius: 15px;
+  }
+  &__title {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__price {
+    font-size: 20px;
   }
 }
 
+.modal-content__spec {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
 .modal-content__table {
   display: table;
+  line-height: 1.7;
+  width: 100%;
   border: 1px solid #fff;
   border-collapse: collapse;
   & td,
   th {
-    padding: 0 10px;
+    width: 50%;
+    padding-left: 5px;
     border: 1px solid #fff;
   }
 }

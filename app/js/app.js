@@ -21,6 +21,7 @@ import { gsap, Power2 } from "gsap";
 import MicroModal from "micromodal";
 
 document.addEventListener("DOMContentLoaded", () => {
+  /* Menu header */
   const menuBtn = document.getElementById("menuBtn");
   const menuContent = document.getElementById("menu-content");
   menuBtn.addEventListener("click", (event) => {
@@ -35,6 +36,40 @@ document.addEventListener("DOMContentLoaded", () => {
       menuContent.classList.remove("active");
     }
   });
+
+  /* Modal menu tabs */
+  const modalTabs303M = document.getElementById("modal-tabs303M");
+  const modalTabs305M = document.getElementById("modal-tabs305M");
+  const modalTabs307M = document.getElementById("modal-tabs307M");
+  const modalContent303M = document.getElementById("modal-content303M");
+  const modalContent305M = document.getElementById("modal-content305M");
+  const modalContent307M = document.getElementById("modal-content307M");
+
+  const changeClass = (id, element) => {
+    for (let i = 0; i < id.children.length; i++) {
+      id.children[i].classList.remove("active");
+      element.classList.add("active");
+    }
+  };
+
+  const changeContent = (id, content) => {
+    id.addEventListener("click", (event) => {
+      const currentTab = event.target.dataset.tabs;
+      changeClass(id, event.target);
+
+      for (let i = 0; i < id.children.length; i++) {
+        content.children[i].classList.remove("active");
+
+        if (content.children[i].dataset.content === currentTab) {
+          content.children[i].classList.add("active");
+        }
+      }
+    });
+  };
+
+  changeContent(modalTabs303M, modalContent303M);
+  changeContent(modalTabs305M, modalContent305M);
+  changeContent(modalTabs307M, modalContent307M);
 
   MicroModal.init({
     openTrigger: "data-micromodal-close",

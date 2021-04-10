@@ -82,6 +82,20 @@
   }
 }
 
+.button--catalog-info {
+  width: 100%;
+  background-color: $dark;
+  border-radius: 0;
+  border-right: 1px solid #fff;
+  color: $accent;
+  &:hover,
+  &.active {
+    box-shadow: none;
+    background-color: $accent;
+    color: #fff;
+  }
+}
+
 .button__text {
   position: relative;
   z-index: 2;

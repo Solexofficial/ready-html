@@ -1,158 +1,1134 @@
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
+    <title>Разработка и производство АФУ</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<title>Create Cool Slider</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/main.min.css">
+  <body></body>
+</html>
 
-</head>
+<header class="header">
+  <a href="#" class="logo__img-wrapper" id="logo">
+    <img class="logo__image" src="images/dist/logo.svg" alt="Вездеход" />
+  </a>
+  <div class="logo__text">
+    Волна
+    <div class="logo__text logo__subtext">Разработка и производство АФУ</div>
+  </div>
+  <div class="header__decoration"></div>
+  <nav>
+    <ul class="nav-list">
+      <li><a class="nav__link active" href="#home">Главная</a></li>
+      <li><a class="nav__link" href="#about">О Нас</a></li>
+      <li><a class="nav__link" href="#catalog">Каталог продукции</a></li>
+      <li><a class="nav__link" href="#dilivery">Доставка</a></li>
+      <li><a class="nav__link" href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header__decoration"></div>
 
-<body>
-
-<div id="cursor"></div>
-
-<header class="home-header">
-
-	<div class="top-line">
-		<a href="#" class="logo">
-			<span class="logo__img-wrapper">
-				<img src="images/dist/logo.svg" alt="Вездеход" class="logo__image">
-			</span>
-			<span class="logo__text">Вездеход</span>
-		</a>
-		<div class="top-line__decoration"></div>
-		<div class="top-line__contacts">
-			Телефон: <span class="top-line__numbers">555-65-34</span>
-			<span class="top-line__separator"></span>
-			<span class="top-line__address">Адрес: <span class="top-line__text">ул. Московская, 35</span></span>
-		</div>
-		<div class="top-line__decoration"></div>
-		<div class="menu-button-container">
-			<a href="#" class="menu-button"></a>
-		</div>
-	</div>
-
-	<div class="home-header__content">
-
-		<aside class="home-aside">
-
-			<div class="home-aside__decoration"></div>
-			<div class="home-aside__soc">
-				<div class="home-aside__soc-items">
-					<a href="https://www.instagram.com/webdesign.master" class="soc-item" target="_blank"><img src="images/dist/soc/instagram-brands.svg" alt="Instagram"></a>
-					<a href="https://vk.com/agragregra" class="soc-item" target="_blank"><img src="images/dist/soc/vk-brands.svg" alt="ВКонтакте"></a>
-					<a href="https://vk.com/agragregra" class="soc-item" target="_blank"><img src="images/dist/soc/facebook-f-brands.svg" alt="Facebook"></a>
-					<a href="https://twitter.com/agragregra" class="soc-item" target="_blank"><img src="images/dist/soc/twitter-brands.svg" alt="Twitter"></a>
-				</div>
-			</div>
-
-			<div class="home-aside__share-icon"></div>
-
-		</aside>
-
-		<div class="slider-container">
-
-			<div class="slider-text">
-
-				<div class="swiper-wrapper">
-
-					<div class="swiper-slide slider-text__slide">
-						<div class="slider-text__content">
-							<h2 class="slider-text__heading">Подбор внедорожника <span>на любой</span> случай</h2>
-							<p class="slider-text__desc">Выберем и подберём для вас любой внедорожник в кратчайшие сроки, с учётом всех ваших пожеланий и всех необходимых потребностей.</p>
-							<button data-micromodal-close="modal-1" class="button button_slider"><span class="button__text">Оставить заявку</span></button>
-						</div>
-					</div>
-
-					<div class="swiper-slide slider-text__slide">
-						<div class="slider-text__content">
-							<h2 class="slider-text__heading">Индивидуальный подход <span>к каждому</span> покупателю</h2>
-							<p class="slider-text__desc">Все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с трепетом относимся к реузльтату нашей работы.</p>
-							<button data-micromodal-close="modal-1" class="button button_slider"><span class="button__text">Оставить заявку</span></button>
-						</div>
-					</div>
-
-					<div class="swiper-slide slider-text__slide">
-						<div class="slider-text__content">
-							<h2 class="slider-text__heading">Выбор лучшей модели <span>из модельного</span> ряда</h2>
-							<p class="slider-text__desc">В нашем модельном ряду имеются модели сотен различных внедорожников, которые удовлетворят даже самого требовательного клиента.</p>
-							<button data-micromodal-close="modal-1" class="button button_slider"><span class="button__text">Оставить заявку</span></button>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="slider-img">
-
-				<div class="swiper-wrapper">
-					<div class="swiper-slide slider-img__slide">
-						<div class="slider-img__bg" data-swiper-parallax="20%" style="background-image: url(images/dist/slide-images/1.jpg);"></div>
-					</div>
-					<div class="swiper-slide slider-img__slide">
-						<div class="slider-img__bg" data-swiper-parallax="20%" style="background-image: url(images/dist/slide-images/2.jpg);"></div>
-					</div>
-					<div class="swiper-slide slider-img__slide">
-						<div class="slider-img__bg" data-swiper-parallax="20%" style="background-image: url(images/dist/slide-images/3.jpg);"></div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="slider-bottom">
-
-				<div class="slider-share">
-					<div class="slider-share__items">
-						<a href="https://vk.com/share.php?url=https://webdesign-master.ru" class="soc-item slider-share__item" target="_blank"><img src="images/dist/soc/vk-brands.svg" alt="ВКонтакте"></a>
-						<a href="https://www.facebook.com/sharer/sharer.php?u=https://webdesign-master.ru" class="soc-item slider-share__item" target="_blank"><img src="images/dist/soc/facebook-f-brands.svg" alt="Facebook"></a>
-						<a href="https://twitter.com/intent/tweet?url=https://webdesign-master.ru" class="soc-item slider-share__item" target="_blank"><img src="images/dist/soc/twitter-brands.svg" alt="Twitter"></a>
-					</div>
-				</div>
-
-				<div class="slider-pagination mousehide">
-					<div class="swiper-pagination"></div>
-				</div>
-
-				<div class="slider-scrollbar">
-					<div class="swiper-scrollbar"></div>
-				</div>
-
-				<div class="slider-navigation">
-					<div class="slider-navigation__container">
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="slider-pagination-count">
-				<span class="current">01</span> / <span class="total"></span></div>
-			</div>
-
-			<div class="slider-pagination-current">01<span class="slider-pagination-current__dot">.</span></div>
-
-			<div class="slider-gear"></div>
-
-	</div>
-
+  <div class="header__contacts">
+    <img class="email-icon" src="images/dist/email-icon.svg" alt="" />
+    <div class="contacts__email">
+      <div>info@antennawave.ru</div>
+      <a href="mailto:solexofficial@yandex.ru">solexofficial@yandex.ru</a>
+    </div>
+    <img class="tel-icon pulse" src="images/dist/tel-icon.svg" alt="" />
+    <div class="contacts__telephone">
+      <span class="tel__text">
+        <span class="pulse pulse__contacts"></span>Звоните, мы сейчас
+        работаем</span
+      >
+      <a class="contacts__tel" href="tel:+79772505640">8(977)250-56-40</a>
+      <span class="contacts__worktime">Пн-Пт 8:00 - 17:00</span>
+    </div>
+  </div>
+  <!-- Cart -->
+  <div class="menu-button-container">
+    <a href="#" class="menu-button" id="menuBtn"></a>
+  </div>
 </header>
+
+<main class="main" id="home">
+  <div class="main-header__content">
+    <aside class="main-aside">
+      <div class="main-aside__decoration"></div>
+      <div class="main-aside__soc">
+        <div class="main-aside__soc-items">
+          <a href="#" class="soc-item" target="_blank"
+            ><img src="images/dist/soc/logos_whatsapp.svg" alt="Whatsupp"
+          /></a>
+          <a href="#" class="soc-item" target="_blank"
+            ><img src="images/dist/soc/logos_telegram.svg" alt="Telegram"
+          /></a>
+          <a href="#" class="soc-item" target="_blank"
+            ><img src="images/dist/soc/viber.svg" alt="Viber"
+          /></a>
+          <a href="#" class="soc-item" target="_blank"
+            ><img src="images/dist/soc/vk-brands.svg" alt="VK"
+          /></a>
+        </div>
+      </div>
+
+      <div class="main-aside__share-icon"></div>
+    </aside>
+
+    <div class="slider-container">
+      <div class="slider-text">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-text__slide">
+            <div class="slider-text__content">
+              <h1 class="slider-text__heading">
+                Разработка и <span>производство</span> антенно-фидерных
+                устройств
+              </h1>
+              <p class="slider-text__desc">
+                ООО "ВОЛНА" разрабатывает, производит и реализует антенны
+                высокого качества. Направленные и круговые антенны
+                <span class="text__mghz"
+                  >250-400МГц ISM 433МГц 4G (LTE800) ISM 868МГц<br />
+                  GSM 9001,2ГГц GSM 1800(DECT) 3G(UMTS 2100) 4G(LTE 2600)</span
+                >
+                <span class="text__price"
+                  >Антенны по самым низким ценам от 1200руб</span
+                >
+              </p>
+              <button class="button button_slider">
+                <a href="#">
+                  <span class="button__text">Каталог продукции</span>
+                </a>
+              </button>
+              <button
+                data-micromodal-close="modal-1"
+                class="button button_slider"
+              >
+                <span class="button__text">Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider-text__slide">
+            <div class="slider-text__content">
+              <h2 class="slider-text__heading">
+                Грозоразрядники <span>Безопасность</span> превыше всего
+              </h2>
+              <p class="slider-text__desc">
+                Устройства грозозащиты применяются в составе АФУ для защиты
+                входа приемо-передающего устройства.Установка грозоразрядника в
+                тракт АФУ обеспечивает защиту оборудования от статического
+                электричества. Данные грозоразрядники представляют собой отрезок
+                линии передачи с включенном параллельно газовой капсулой
+                (газоразрядником).
+              </p>
+              <button class="button button_slider">
+                <a href="#">
+                  <span class="button__text">Каталог продукции</span>
+                </a>
+              </button>
+              <button
+                data-micromodal-close="modal-1"
+                class="button button_slider"
+              >
+                <span class="button__text">Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider-text__slide">
+            <div class="slider-text__content">
+              <h2 class="slider-text__heading">
+                Разработаем антенну <span>индивидуально для вас</span>
+              </h2>
+              <p class="slider-text__desc">
+                Разработка и настройка АФУ по вашему запросу
+              </p>
+
+              <button
+                data-micromodal-close="modal-1"
+                class="button button_slider"
+              >
+                <span class="button__text">Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-img">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider-img__slide">
+            <div
+              class="slider-img__bg"
+              data-swiper-parallax="20%"
+              style="
+                background-image: url(images/dist/slide-images/my-slide-1.jpg);
+                background-size: cover;
+              "
+            ></div>
+          </div>
+          <div class="swiper-slide slider-img__slide">
+            <div
+              class="slider-img__bg"
+              data-swiper-parallax="20%"
+              style="
+                background-image: url(images/dist/slide-images/my-slide2.jpg);
+              "
+            ></div>
+          </div>
+          <div class="swiper-slide slider-img__slide">
+            <div
+              class="slider-img__bg"
+              data-swiper-parallax="20%"
+              style="
+                background-image: url(images/dist/slide-images/mySlide3.jpg);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-bottom">
+        <div class="slider-share">
+          <a href="#" class="faq-item slider-share__item">
+            <svg class="faq-icon" viewBox="0 0 26 26" width="50" height="50">
+              <use xlink:href="#faq"></use>
+            </svg>
+            <div class="faq__title">
+              FAQ<br />
+              <span class="faq__question">Как подобрать антенну?</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="slider-pagination mousehide">
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="slider-scrollbar">
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="slider-navigation">
+          <div class="slider-navigation__container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-pagination-count">
+        <span class="current">01</span> / <span class="total"></span>
+      </div>
+    </div>
+
+    <div class="slider-pagination-current">
+      01<span class="slider-pagination-current__dot">.</span>
+    </div>
+
+    <div class="slider-gear"></div>
+  </div>
+
+  <div class="menu" id="menu-content">
+    <div class="menu__content">
+      <h2 class="menu__title">Антенны по диапазонам</h2>
+      <a href="" class="menu__link">250-400МГц</a>
+      <a href="" class="menu__link">ISM 433МГц</a>
+      <a href="" class="menu__link">4G(LTE800)</a>
+      <a href="" class="menu__link">ISM 868МГц</a>
+      <a href="" class="menu__link">GSM 9001,2ГГц</a>
+      <a href="" class="menu__link">GSM 1800(DECT)</a>
+      <a href="" class="menu__link">3G(UMTS 2100)</a>
+      <a href="" class="menu__link">4G(LTE 2600)</a>
+    </div>
+  </div>
+</main>
+
+<section class="section section--about" id="about">
+  <!-- <div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#0e0e23"
+        fill-opacity="1"
+        d="M0,160L48,149.3C96,139,192,117,288,96C384,75,480,53,576,53.3C672,53,768,75,864,106.7C960,139,1056,181,1152,208C1248,235,1344,245,1392,250.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+  </div> -->
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section__title">О Компании</h2>
+      <h3 class="section__text">
+        Разрабатываем, производим и реализуем антенны высокого качества. Мы
+        сотрудничаем с производителями оборудования в составе которого
+        необходимо усиление сигнала до определенного уровня.
+      </h3>
+    </div>
+    <div class="about-benefits">
+      <div class="benefits-item">
+        <img
+          class="benefits-item__icon"
+          src="../images/dist/about/trophy.svg"
+          alt=""
+        />
+
+        <div class="benefits-item__header">Работаем с 1995 года</div>
+        <div class="benefits-item__text">
+          Благодаря накопленному опыту - нашему бренду RUSCOMM-ANTENNA и ANTLINK
+          <strong>более 25 лет</strong>
+        </div>
+      </div>
+
+      <div class="benefits-item">
+        <img
+          class="benefits-item__icon"
+          src="../images/dist/about/guarantee2.svg"
+          alt=""
+        />
+
+        <div class="benefits-item__header">Гарантия 10 лет</div>
+        <div class="benefits-item__text">
+          Благодаря высоко-качественной герметизации наши антенны не подвластны
+          воздействиям вредных факторов окружающей среды
+        </div>
+      </div>
+
+      <div class="benefits-item">
+        <img
+          class="benefits-item__icon"
+          src="../images/dist/about/warranty.svg"
+          alt=""
+        />
+        <div class="benefits-item__header">Надежность</div>
+        <div class="benefits-item__text">
+          Нам доверяют крупные компании, такие как Coca-cola, Tesla, BMW
+        </div>
+      </div>
+    </div>
+
+    <div class="about-company">
+      <div class="about-col">
+        <div class="about__inner">
+          <div class="about__titleCompany">
+            Вас приветствует компания ООО "ВОЛНА"
+          </div>
+          <div class="about__text">
+            <span
+              >Беспроводные средства связи сегодня представляют самый быстро
+              развивающийся сегмент отрасли связи. По этой причине они приковали
+              к себе внимание средств массовой информации и общества. Последнее
+              десятилетие охарактеризовалось бурным развитием систем сотовой
+              связи, и в настоящее время по всему миру насчитывается свыше двух
+              миллиардов пользователей таких систем.</span
+            >
+            <span
+              >В самом деле, сотовые телефоны стали важным инструментом бизнеса
+              и частью повседневной жизни в большинстве развитых стран, а во
+              многих развивающихся странах они стремительно вытесняют устаревшие
+              проводные системы. Кроме того, беспроводные локальные сети сегодня
+              часто дополняют или заменяют проводные сети в домашних условиях,
+              на предприятиях и в студенческих городках.</span
+            >
+            <span
+              >Существует и множество новых приложений, включая беспроводные
+              сети датчиков, автоматизированные производственные линии и
+              автомагистрали, «умные дома» (Дома с централизованным компьютерным
+              управлением всеми системами жизнеобеспечения и подсобными
+              службами: охраной, освещением, водоснабжением, отоплением,
+              кондиционированием воздуха и т.п.) и бытовые приборы, а также
+              телемедицину, которые проходят путь от научных разработок до
+              реальных систем.</span
+            >
+            <span
+              >Стремительный рост беспроводных систем в сочетании с
+              распространением небольших портативных и карманных компьютеров
+              предсказывает блестящее будущее беспроводным сетям - как в виде
+              автономных систем, так и в качестве составной части большой
+              сетевой инфраструктуры.</span
+            >
+            <span
+              >Никакая беспроводная связь невозможна без применения антенн.
+              Антенны для сотовой связи, антенные системы предназначены для
+              излучения или приема электромагнитных волн. Антенно-фидерные
+              устройства являются одним из важнейших элементов любой
+              радиотехнической системы, связанной с излучением или приемом
+              радиоволн. К таким системам относят: системы радиосвязи,
+              радиовещания, телевидения, радиоуправления, радиорелейной связи,
+              радиолокации, радиоастрономии, радионавигации и др.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="about-col about-col--animate">
+        <div class="about-animate">
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_96bovdur.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 400px"
+            loop
+            autoplay
+          ></lottie-player>
+          <div class="about-quote">
+            Решающий фактор в успехе беспроводной связи — надежность.
+            Беспроводная связь является оптимальным решением — это просто,
+            безопасно и недорого.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="purpose">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section__title">Широкий спектр назначений</h2>
+      <h3 class="section__text">
+        Наши антенны используются для приема и передачи сигнала в системах
+        "Умный Дом", охранно-пожарной сигнализации объектов,для усиления сигнала
+        сотовой связи, Wi-Fi и TV на объектах: загородные дома. подвальные
+        помещения, гаражи, офисы
+      </h3>
+    </div>
+    <!-- ./section__header -->
+
+    <div class="purpose">
+      <div class="purpose-row">
+        
+        <div class="purpose-item purpose-item--smart">
+          <div class="purpose-item__title">Система умный дом</div>
+        </div>
+        <div class="purpose-item purpose-item--wifi">
+          <div class="purpose-item__title">Усиление сигнала Wi-Fi</div>
+        </div>
+        <div class="purpose-item purpose-item--mobile">
+          <div class="purpose-item__title">Усиление сигнала сотовой связи</div>
+        </div>
+
+        <div class="purpose-item purpose-item--tv">
+          <div class="purpose-item__title">Усиление сигнала TV</div>
+        </div>
+        <div class="purpose-item purpose-item--fire">
+          <div class="purpose-item__title">Охранно-пожарной сигнализации</div>
+        </div>
+        <div class="purpose-item purpose-item--radio">
+          <div class="purpose-item__title">Усиление сигнала радио частот</div>
+        </div>
+      </div>
+    </div>
+  <!-- ./container -->
+  <div class="wave-purpose">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,213.3C480,213,600,171,720,149.3C840,128,960,128,1080,154.7C1200,181,1320,235,1380,261.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  </div>
+</section>
+
+<section class="section section--catalog" id="catalog">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section__title section__title--black">Каталог продукции</h2>
+    </div>
+    <div class="catalog">
+      <div class="catalog-inner">
+        <aside class="catalog-aside">
+          <ul class="catalog-menu" id="catalog-menu-aside">
+            <li class="catalog-menu__item">
+              <a href="#">250-400МГц</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">ISM 433МГц</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">4G(LTE800)</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">ISN 868МГц</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">GSM 9001,2ГГц</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">GSM 1800(DECT)</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">3G(UMTS 2100)</a>
+            </li>
+            <li class="catalog-menu__item">
+              <a href="#">4G(LTE 2600)</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="catalog-products-wrapper">
+          <div class="products-ant250400">
+            <div class="catalog-products__title">Диапазон 250-400 МГц</div>
+            <div class="catalog-products__desc">
+              Базовые судовые антенны круговой диаграммы направленности речного
+              диапазона 300-350 МГц: ANT305M, ANT307M и направленная антенна
+              ANT350Y предназначены для работы в системах сухопутной, речной
+              связи, телеметрии, а также в составе приемо-передающих УКВ
+              радиостанций работающих в диапазоне частот 300-350 МГц.<br />
+              Антенна ANT-307 Y предназначена для увеличения дальности действия
+              радиотрубок Senao, Sanyo, Harvest, Komtel и радиоудлинителях
+              использующих диапазон 250-400 МГц.
+            </div>
+
+            <div class="catalog-products">
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT303M.jpg"
+                  alt="ANT303M"
+                />
+                <div class="catalog-item__name">Антенна ANT 303M</div>
+                <div class="catalog-item__desc">К.У. - 3 dBi</div>
+                <div class="catalog-item__price">1500 РУБ</div>
+                <button
+                  class="button button--catalog"
+                  data-micromodal-close="modal-catalog-ant303m"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT305M.png"
+                  alt="ANT305M"
+                />
+                <div class="catalog-item__name">Антенна ANT 305M</div>
+                <div class="catalog-item__desc">К.У. - 5 dBi</div>
+                <div class="catalog-item__price">1850 РУБ</div>
+                <button
+                  class="button button--catalog"
+                  data-micromodal-close="modal-catalog-ant305m"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT307M.png"
+                  alt="ANT307M"
+                />
+                <div class="catalog-item__name">Антенна ANT 307M</div>
+                <div class="catalog-item__desc">К.У. - 7 dBi</div>
+                <div class="catalog-item__price">2500 РУБ</div>
+                <button
+                  class="button button--catalog"
+                  data-micromodal-close="modal-catalog-ant307m"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img catalog-item__img--wide"
+                  src="images/dist/catalog/250-400/ANT350y.jpg"
+                  alt="ANT350Y"
+                />
+                <div class="catalog-item__name">Антенна ANT 350Y</div>
+                <div class="catalog-item__desc">К.У. - 9,5 dBi</div>
+                <div class="catalog-item__price">1500 РУБ</div>
+                <button class="button button--catalog">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-ISM433">
+            <div class="catalog-products__title">Диапазон ISM 433 МГц</div>
+            <div class="catalog-products__desc">
+              Антенны ANT 435 - 5/8LB, ANT 433 - 09 GY, ANT 433 - 12 GY и ANT
+              433 - 14 GY линейки серии ISM 433 МГц предназначены для работы в
+              составе оборудования работающего в частотном диапазоне от 425 МГц
+              до 445 МГц, антенны диапазон ISM 433 используются со стационарными
+              приемниками радиоканальных систем передачи извещений LONTA-202
+              (Риф Стринг-202), РИФ СТРИНГ-200, РИФ РИНГ-701, а также с другими
+              радиоустройствами, работающими на частоте 433,92 МГц.
+            </div>
+
+            <div class="catalog-products">
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT305M.png"
+                  alt="ANT305M"
+                />
+                <div class="catalog-item__name">Антенна ANT 305M</div>
+                <div class="catalog-item__desc">К.У. - 5 dBi</div>
+                <div class="catalog-item__price">1850 РУБ</div>
+                <button class="button button--catalog">Подробнее</button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img catalog-item__img--wide"
+                  src="images/dist/catalog/250-400/ANT350y.jpg"
+                  alt="ANT350Y"
+                />
+                <div class="catalog-item__name">Антенна ANT 350Y</div>
+                <div class="catalog-item__desc">К.У. - 9,5 dBi</div>
+                <div class="catalog-item__price">1500 РУБ</div>
+                <button class="button button--catalog">Подробнее</button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT307M.png"
+                  alt="ANT307M"
+                />
+                <div class="catalog-item__name">Антенна ANT 307M</div>
+                <div class="catalog-item__desc">К.У. - 7 dBi</div>
+                <div class="catalog-item__price">2500 РУБ</div>
+                <button class="button button--catalog">Подробнее</button>
+              </div>
+              <div class="catalog-item">
+                <img
+                  class="catalog-item__img"
+                  src="images/dist/catalog/250-400/ANT303M.jpg"
+                  alt="ANT303M"
+                />
+                <div class="catalog-item__name">Антенна ANT 307M</div>
+                <div class="catalog-item__desc">К.У. - 3 dBi</div>
+                <div class="catalog-item__price">1500 РУБ</div>
+                <button class="button button--catalog">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./catalog-products-wrapper -->
+      </div>
+      <!-- ./catalog__inner -->
+    </div>
+  </div>
+</section>
+
+
+<g>
+  <svg
+    width="26"
+    height="26"
+    viewBox="0 0 26 26"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <symbol id="faq">
+      <path
+        d="M13 0C11.3 0 10 1.3 10 3V9C10 10.7 11.3 12 13 12H19L23 16V12C24.7 12 26 10.7 26 9V3C26 1.3 24.7 0 23 0H13ZM17.188 3H18.906L20.594 9H19.094L18.687 7.5H17.187L16.813 9H15.5L17.188 3ZM18 4C17.9 4.4 17.788 4.888 17.687 5.188L17.407 6.5H18.594L18.312 5.187C18.113 4.888 18 4.4 18 4ZM3 10C1.3 10 0 11.3 0 13V19C0 20.7 1.3 22 3 22V26L7 22H13C14.7 22 16 20.7 16 19V13H13C11.1 13 9.594 11.7 9.094 10H3ZM7.594 12.906C9.294 12.906 10.094 14.306 10.094 15.906C10.094 17.306 9.613 18.194 8.813 18.594C9.213 18.794 9.687 18.9 10.187 19L9.813 20C9.113 19.8 8.387 19.488 7.687 19.187C7.587 19.087 7.412 19.094 7.312 19.094C6.112 18.994 5 18 5 16C5 14.3 5.994 12.906 7.594 12.906V12.906ZM7.594 14C6.794 14 6.406 14.9 6.406 16C6.406 17.2 6.794 18 7.594 18C8.394 18 8.812 17.1 8.812 16C8.812 14.9 8.394 14 7.594 14V14Z"
+      />
+    </symbol>
+  </svg>
+</g>
+
+<!-- home modal -->
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-1-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">Оставить заявку</h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+      <form action="#">
+        <main class="modal-content" id="modal-1-content">
+          <input
+            class="form-input modal__input"
+            type="text"
+            name="VH-Name"
+            placeholder="Ваше имя..."
+          />
+          <input
+            class="form-input modal__input"
+            type="text"
+            name="VH-Phone"
+            placeholder="Ваш телефон..."
+            required
+          />
+          <textarea
+            class="form-input modal__input"
+            name="Message"
+            placeholder="Сообщение..."
+          ></textarea>
+        </main>
+        <footer class="modal__footer">
+          <button class="button button--modal" type="submit">
+            <span class="button__text">Отправить</span>
+          </button>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ANT303M with tabs  -->
+<div
+  class="modal micromodal-slide"
+  id="modal-catalog-ant303m"
+  aria-hidden="true"
+>
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container modal__container--catalog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-ant303m-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant303m-title">
+          Антенна ANT 303M
+        </h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+
+      <main class="modal-content" id="modal-ant303m-content">
+        <div class="modal-content__info">
+          <div class="info-text">
+            <div class="info-menu" id="modal-tabs303M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content303M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Всенаправленная антенна ANT 303 M, была разработана для
+                  систем связи, работающих в диапазоне частот 250…400 МГц:</span
+                >
+                <ol class="info-text__list">
+                  <li>1. Sanyo <span>256-257, 382-383 МГц</span></li>
+                  <li>2. Harvest (HT-3) <span>263-267, 393-397 МГц</span></li>
+                  <li>3. Senao 868 <span>250-254, 380-384 МГц</span></li>
+                  <li>4. Senao 258 <span>264-265, 390-391 МГц</span></li>
+                </ol>
+                <p class="info-text__paragraph">
+                  Также базовая всенаправленная антенна ANT 303M предназначены
+                  для работы в системах сухопутной, речной связи, телеметрии, а
+                  также в составе приемо-передающих УКВ радиостанций работающих
+                  в диапазоне частот 300-350 МГц. <br />Узел крепления антенны
+                  выполнен из нержавеющей стали. Антенна имеет прочную
+                  конструкцию, устойчивую к воздействиям внешней среды. Антенна
+                  может устанавливается на стену и вертикальную трубу диаметром
+                  25-42 мм; <br />Диапазон рабочих температур, -40…+60°C;
+                  Диаграмма направленности в горизонтальной плоскости — 360°
+                  (круговая); <br />Комплект поставки: антенна - 1 шт. скобы
+                  крепления - 2 шт. инструкция - 1 шт. упаковка - 1 шт.
+                </p>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 303M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>250-400</td>
+                  </tr>
+                  <tr>
+                    <td>Полоса пропускания, МГц</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>не более 1.5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитного кожуха</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>нержавеющяя сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>2.15</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая мощность, Вт</td>
+                    <td>&gt; 200</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N - тип</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, м/сек</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал</td>
+                    <td>алюминий марки АД-31</td>
+                  </tr>
+                  <tr>
+                    <td>Крепление</td>
+                    <td>мачта диаметром 25…42 мм</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="images/dist/catalog/250-400/ANT303M.jpg" alt="" />
+            <div class="info-img__title">ANT 303M</div>
+            <div class="info-img__price">1500 РУБ</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="modal__footer">
+        <button class="button button--modal" type="submit">
+          <span class="button__text">В корзину</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- ANT305M with tabs -->
+<div
+  class="modal micromodal-slide"
+  id="modal-catalog-ant305m"
+  aria-hidden="true"
+>
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container modal__container--catalog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-ant305m-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant305m-title">
+          Антенна ANT 305M
+        </h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+
+      <main class="modal-content" id="modal-ant305m-content">
+        <div class="modal-content__info">
+          <div class="info-text">
+            <div class="info-menu" id="modal-tabs305M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content305M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Базовая всенаправленная судовая антенна ANT 305M
+                  предназначена для работы в системах сухопутной, речной связи,
+                  телеметрии, а также в составе приемо-передающих УКВ
+                  радиостанций работающих в диапазоне частот 300-350 МГц.<br />
+                  Внешние металлические элементы антенны заземлены по
+                  постоянному току и не имеют выступающих противовесов благодаря
+                  использованию четвертьволнового отсекающего стакана. Узел
+                  крепления антенны выполнен из оцинкованной стали.<br />
+                  Антенна имеет прочную конструкцию, устойчивую к воздействиям
+                  внешней среды и не требует использования дорогостоящих средств
+                  грозозащиты (грозоразрядников).</span
+                >
+                <ul class="info-text__list">
+                  <li>
+                    Антенна может устанавливается на стену и вертикальную трубу
+                    диаметром 25-42 мм;
+                  </li>
+                  <li>Диапазон рабочих температур, -40…+60°C;</li>
+                  <li>
+                    Диаграмма направленности в горизонтальной плоскости — 360°
+                    (круговая);
+                  </li>
+                  <li>
+                    Комплект поставки:<br />
+                    антенна - 1 шт.<br />
+                    скобы крепления - 2 шт.<br />
+                    инструкция - 1 шт.<br />
+                    упаковка - 1 шт.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 305M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>300-350</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>не более 1.5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон темератур</td>
+                    <td>-40…+60°C</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, км/ч</td>
+                    <td>240</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N-female</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитной крышки</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал согласующего стакана</td>
+                    <td>алюминий</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Степень защиты</td>
+                    <td>IP 65</td>
+                  </tr>
+                  <tr>
+                    <td>Габариты / Вес</td>
+                    <td>1000х75х60 мм / 0.6 кг</td>
+                  </tr>
+                </table>
+                <img
+                  class="img"
+                  src="images/dist/catalog/250-400/ant305mScheme.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="images/dist/catalog/250-400/ANT305M.png" alt="" />
+            <div class="info-img__title">ANT 305M</div>
+            <div class="info-img__price">1850 РУБ</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="modal__footer">
+        <button class="button button--modal" type="submit">
+          <span class="button__text">В корзину</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- ANT307M with tabs -->
+<div
+  class="modal micromodal-slide"
+  id="modal-catalog-ant307m"
+  aria-hidden="true"
+>
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container modal__container--catalog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-ant307m-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant307m-title">
+          Антенна ANT 307M
+        </h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+
+      <main class="modal-content" id="modal-ant307m-content">
+        <div class="modal-content__info">
+          <div class="info-text">
+            <div class="info-menu" id="modal-tabs307M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content307M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Базовая всенаправленная судовая антенна ANT 307M
+                  предназначены для работы в системах сухопутной, речной связи,
+                  телеметрии, а также в составе приемо-передающих УКВ
+                  радиостанций работающих в диапазоне частот 300-350 МГц.
+                  Внешние металлические элементы антенны заземлены по
+                  постоянному току и не имеют выступающих противовесов благодаря
+                  использованию четвертьволнового отсекающего стакана. Узел
+                  крепления антенны выполнен из оцинкованной стали. Антенна
+                  имеет прочную конструкцию, устойчивую к воздействиям внешней
+                  среды и не требует использования дорогостоящих средств
+                  грозозащиты (грозоразрядников).</span
+                >
+                <ul class="info-text__list">
+                  <li>
+                    Антенна может устанавливается на стену и вертикальную трубу
+                    диаметром 25-42 мм
+                  </li>
+                  <li>Диапазон рабочих температур, -40…+60°C;</li>
+                  <li>
+                    Диаграмма направленности в горизонтальной плоскости — 360°
+                    (круговая);
+                  </li>
+                  <li>
+                    Комплект поставки:<br />
+                    антенна - 1 шт.<br />
+                    скобы крепления - 2 шт.<br />
+                    инструкция - 1 шт.<br />
+                    упаковка - 1 шт.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 307M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>250-400</td>
+                  </tr>
+                  <tr>
+                    <td>Полоса пропускания, МГц</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>&lt;1,5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитного кожуха</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>нержавеющяя сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>2.15</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая мощность, Вт</td>
+                    <td>&gt;200</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N - тип</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, м/сек</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал</td>
+                    <td>алюминий марки АД-31</td>
+                  </tr>
+                  <tr>
+                    <td>Крепление</td>
+                    <td>мачта диаметром 25…42 мм</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="images/dist/catalog/250-400/ANT307M.png" alt="" />
+            <div class="info-img__title">ANT 307M</div>
+            <div class="info-img__price">2500 РУБ</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="modal__footer">
+        <button class="button button--modal" type="submit">
+          <span class="button__text">В корзину</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/app.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
 </html>

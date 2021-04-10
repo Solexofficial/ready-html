@@ -1,3 +1,4 @@
+<!-- home modal -->
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
   <div class="modal__overlay" tabindex="-1" data-micromodal-close>
     <div
@@ -45,7 +46,7 @@
   </div>
 </div>
 
-////////////////////
+<!-- ANT303M with tabs  -->
 <div
   class="modal micromodal-slide"
   id="modal-catalog-ant303m"
@@ -59,7 +60,7 @@
       aria-labelledby="modal-ant303m-title"
     >
       <header class="modal__header">
-        <h2 class="modal__title modal__title--catalog" id="modal-ant305m-title">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant303m-title">
           Антенна ANT 303M
         </h2>
         <button
@@ -72,89 +73,415 @@
       <main class="modal-content" id="modal-ant303m-content">
         <div class="modal-content__info">
           <div class="info-text">
-            <span class="info-text__title"
-              >Всенаправленная антенна ANT 303 M, была разработана для систем
-              связи, работающих в диапазоне частот 250…400 МГц:</span
-            >
-            <ol class="info-text__list">
-              <li>1. Sanyo <span>256-257, 382-383 МГц</span></li>
-              <li>2. Harvest (HT-3) <span>263-267, 393-397 МГц</span></li>
-              <li>3. Senao 868 <span>250-254, 380-384 МГц</span></li>
-              <li>4. Senao 258 <span>264-265, 390-391 МГц</span></li>
-            </ol>
-            <p class="info-text__paragraph">
-              Также базовая всенаправленная антенна ANT 303M предназначены для
-              работы в системах сухопутной, речной связи, телеметрии, а также в
-              составе приемо-передающих УКВ радиостанций работающих в диапазоне
-              частот 300-350 МГц. <br />Узел крепления антенны выполнен из
-              нержавеющей стали. Антенна имеет прочную конструкцию, устойчивую к
-              воздействиям внешней среды. Антенна может устанавливается на стену
-              и вертикальную трубу диаметром 25-42 мм; <br />Диапазон рабочих
-              температур, -40…+60°C; Диаграмма направленности в горизонтальной
-              плоскости — 360° (круговая); <br />Комплект поставки: антенна - 1
-              шт. скобы крепления - 2 шт. инструкция - 1 шт. упаковка - 1 шт.
-            </p>
+            <div class="info-menu" id="modal-tabs303M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content303M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Всенаправленная антенна ANT 303 M, была разработана для
+                  систем связи, работающих в диапазоне частот 250…400 МГц:</span
+                >
+                <ol class="info-text__list">
+                  <li>1. Sanyo <span>256-257, 382-383 МГц</span></li>
+                  <li>2. Harvest (HT-3) <span>263-267, 393-397 МГц</span></li>
+                  <li>3. Senao 868 <span>250-254, 380-384 МГц</span></li>
+                  <li>4. Senao 258 <span>264-265, 390-391 МГц</span></li>
+                </ol>
+                <p class="info-text__paragraph">
+                  Также базовая всенаправленная антенна ANT 303M предназначены
+                  для работы в системах сухопутной, речной связи, телеметрии, а
+                  также в составе приемо-передающих УКВ радиостанций работающих
+                  в диапазоне частот 300-350 МГц. <br />Узел крепления антенны
+                  выполнен из нержавеющей стали. Антенна имеет прочную
+                  конструкцию, устойчивую к воздействиям внешней среды. Антенна
+                  может устанавливается на стену и вертикальную трубу диаметром
+                  25-42 мм; <br />Диапазон рабочих температур, -40…+60°C;
+                  Диаграмма направленности в горизонтальной плоскости — 360°
+                  (круговая); <br />Комплект поставки: антенна - 1 шт. скобы
+                  крепления - 2 шт. инструкция - 1 шт. упаковка - 1 шт.
+                </p>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 303M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>250-400</td>
+                  </tr>
+                  <tr>
+                    <td>Полоса пропускания, МГц</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>не более 1.5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитного кожуха</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>нержавеющяя сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>2.15</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая мощность, Вт</td>
+                    <td>&gt; 200</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N - тип</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, м/сек</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал</td>
+                    <td>алюминий марки АД-31</td>
+                  </tr>
+                  <tr>
+                    <td>Крепление</td>
+                    <td>мачта диаметром 25…42 мм</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
           <div class="info-img">
             <img src="images/dist/catalog/250-400/ANT303M.jpg" alt="" />
-            <div class="info-img__title"></div>
-            <div class="info-img__price"></div>
+            <div class="info-img__title">ANT 303M</div>
+            <div class="info-img__price">1500 РУБ</div>
           </div>
         </div>
-        <table class="modal-content__table">
-          <tr>
-            <th>Электрические и механические параметры</th>
-            <th>Значение параметров ANT 303M</th>
-          </tr>
-          <tr>
-            <td>Рабочий диапазон частот, МГц</td>
-            <td>250-400</td>
-          </tr>
-          <tr>
-            <td>Полоса пропускания, МГц</td>
-            <td>150</td>
-          </tr>
-          <tr>
-            <td>КСВ в рабочем диапазоне частот</td>
-            <td>&lt;1,5</td>
-          </tr>
-          <tr>
-            <td>Входное сопротивление, Ом</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Материал защитного кожуха</td>
-            <td>PVC</td>
-          </tr>
-          <tr>
-            <td>Материал крепления</td>
-            <td>нержавеющяя сталь</td>
-          </tr>
-          <tr>
-            <td>Усиление, dBi</td>
-            <td>2.15</td>
-          </tr>
-          <tr>
-            <td>Допустимая мощность, Вт</td>
-            <td>&gt;200</td>
-          </tr>
-          <tr>
-            <td>Разъем</td>
-            <td>N - тип</td>
-          </tr>
-          <tr>
-            <td>Допустимая скорость ветра, м/сек</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Материал</td>
-            <td>алюминий марки АД-31</td>
-          </tr>
-          <tr>
-            <td>Крепление</td>
-            <td>мачта диаметром 25…42 мм</td>
-          </tr>
-        </table>
+      </main>
+
+      <footer class="modal__footer">
+        <button class="button button--modal" type="submit">
+          <span class="button__text">В корзину</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- ANT305M with tabs -->
+<div
+  class="modal micromodal-slide"
+  id="modal-catalog-ant305m"
+  aria-hidden="true"
+>
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container modal__container--catalog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-ant305m-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant305m-title">
+          Антенна ANT 305M
+        </h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+
+      <main class="modal-content" id="modal-ant305m-content">
+        <div class="modal-content__info">
+          <div class="info-text">
+            <div class="info-menu" id="modal-tabs305M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content305M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Базовая всенаправленная судовая антенна ANT 305M
+                  предназначена для работы в системах сухопутной, речной связи,
+                  телеметрии, а также в составе приемо-передающих УКВ
+                  радиостанций работающих в диапазоне частот 300-350 МГц.<br />
+                  Внешние металлические элементы антенны заземлены по
+                  постоянному току и не имеют выступающих противовесов благодаря
+                  использованию четвертьволнового отсекающего стакана. Узел
+                  крепления антенны выполнен из оцинкованной стали.<br />
+                  Антенна имеет прочную конструкцию, устойчивую к воздействиям
+                  внешней среды и не требует использования дорогостоящих средств
+                  грозозащиты (грозоразрядников).</span
+                >
+                <ul class="info-text__list">
+                  <li>
+                    Антенна может устанавливается на стену и вертикальную трубу
+                    диаметром 25-42 мм;
+                  </li>
+                  <li>Диапазон рабочих температур, -40…+60°C;</li>
+                  <li>
+                    Диаграмма направленности в горизонтальной плоскости — 360°
+                    (круговая);
+                  </li>
+                  <li>
+                    Комплект поставки:<br />
+                    антенна - 1 шт.<br />
+                    скобы крепления - 2 шт.<br />
+                    инструкция - 1 шт.<br />
+                    упаковка - 1 шт.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 305M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>300-350</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>не более 1.5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон темератур</td>
+                    <td>-40…+60°C</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, км/ч</td>
+                    <td>240</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N-female</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитной крышки</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал согласующего стакана</td>
+                    <td>алюминий</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Степень защиты</td>
+                    <td>IP 65</td>
+                  </tr>
+                  <tr>
+                    <td>Габариты / Вес</td>
+                    <td>1000х75х60 мм / 0.6 кг</td>
+                  </tr>
+                </table>
+                <img
+                  class="img"
+                  src="images/dist/catalog/250-400/ant305mScheme.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="images/dist/catalog/250-400/ANT305M.png" alt="" />
+            <div class="info-img__title">ANT 305M</div>
+            <div class="info-img__price">1850 РУБ</div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="modal__footer">
+        <button class="button button--modal" type="submit">
+          <span class="button__text">В корзину</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- ANT307M with tabs -->
+<div
+  class="modal micromodal-slide"
+  id="modal-catalog-ant307m"
+  aria-hidden="true"
+>
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div
+      class="modal__container modal__container--catalog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-ant307m-title"
+    >
+      <header class="modal__header">
+        <h2 class="modal__title modal__title--catalog" id="modal-ant307m-title">
+          Антенна ANT 307M
+        </h2>
+        <button
+          class="modal__close"
+          aria-label="Close modal"
+          data-micromodal-close
+        ></button>
+      </header>
+
+      <main class="modal-content" id="modal-ant307m-content">
+        <div class="modal-content__info">
+          <div class="info-text">
+            <div class="info-menu" id="modal-tabs307M">
+              <button
+                class="button button--catalog button--catalog-info active"
+                data-tabs="desc"
+              >
+                Описание
+              </button>
+              <button
+                class="button button--catalog button--catalog-info"
+                data-tabs="table"
+              >
+                Характеристики
+              </button>
+            </div>
+            <div class="modal-content__content" id="modal-content307M">
+              <div class="info-content active" data-content="desc">
+                <span class="info-text__title"
+                  >Базовая всенаправленная судовая антенна ANT 307M
+                  предназначены для работы в системах сухопутной, речной связи,
+                  телеметрии, а также в составе приемо-передающих УКВ
+                  радиостанций работающих в диапазоне частот 300-350 МГц.
+                  Внешние металлические элементы антенны заземлены по
+                  постоянному току и не имеют выступающих противовесов благодаря
+                  использованию четвертьволнового отсекающего стакана. Узел
+                  крепления антенны выполнен из оцинкованной стали. Антенна
+                  имеет прочную конструкцию, устойчивую к воздействиям внешней
+                  среды и не требует использования дорогостоящих средств
+                  грозозащиты (грозоразрядников).</span
+                >
+                <ul class="info-text__list">
+                  <li>
+                    Антенна может устанавливается на стену и вертикальную трубу
+                    диаметром 25-42 мм
+                  </li>
+                  <li>Диапазон рабочих температур, -40…+60°C;</li>
+                  <li>
+                    Диаграмма направленности в горизонтальной плоскости — 360°
+                    (круговая);
+                  </li>
+                  <li>
+                    Комплект поставки:<br />
+                    антенна - 1 шт.<br />
+                    скобы крепления - 2 шт.<br />
+                    инструкция - 1 шт.<br />
+                    упаковка - 1 шт.
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-content__spec" data-content="table">
+                <table class="modal-content__table">
+                  <tr>
+                    <th>Электрические и механические параметры</th>
+                    <th>Значение параметров ANT 307M</th>
+                  </tr>
+                  <tr>
+                    <td>Рабочий диапазон частот, МГц</td>
+                    <td>250-400</td>
+                  </tr>
+                  <tr>
+                    <td>Полоса пропускания, МГц</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>КСВ в рабочем диапазоне частот</td>
+                    <td>&lt;1,5</td>
+                  </tr>
+                  <tr>
+                    <td>Входное сопротивление, Ом</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал защитного кожуха</td>
+                    <td>PVC</td>
+                  </tr>
+                  <tr>
+                    <td>Материал крепления</td>
+                    <td>нержавеющяя сталь</td>
+                  </tr>
+                  <tr>
+                    <td>Усиление, dBi</td>
+                    <td>2.15</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая мощность, Вт</td>
+                    <td>&gt;200</td>
+                  </tr>
+                  <tr>
+                    <td>Разъем</td>
+                    <td>N - тип</td>
+                  </tr>
+                  <tr>
+                    <td>Допустимая скорость ветра, м/сек</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Материал</td>
+                    <td>алюминий марки АД-31</td>
+                  </tr>
+                  <tr>
+                    <td>Крепление</td>
+                    <td>мачта диаметром 25…42 мм</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="info-img">
+            <img src="images/dist/catalog/250-400/ANT307M.png" alt="" />
+            <div class="info-img__title">ANT 307M</div>
+            <div class="info-img__price">2500 РУБ</div>
+          </div>
+        </div>
       </main>
 
       <footer class="modal__footer">
