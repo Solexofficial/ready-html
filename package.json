@@ -33,6 +33,7 @@
 	"dependencies": {
 		"gsap": "^3.6.0",
 		"micromodal": "^0.4.6",
+		"ssri": "^8.0.1",
 		"swiper": "^6.4.15"
 	}
 }
